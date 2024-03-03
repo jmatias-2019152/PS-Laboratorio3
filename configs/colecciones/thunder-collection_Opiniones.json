@@ -1,0 +1,226 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Opiniones",
+    "dateExported": "2024-03-03T08:01:30.223Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "df55c214-ee82-46bb-83f1-9f24662f677c",
+            "name": "Login",
+            "containerId": "",
+            "created": "2024-03-03T07:42:45.962Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "848b00ab-aeac-4534-8353-4bd232918302",
+            "name": "Publicaciones",
+            "containerId": "",
+            "created": "2024-03-03T07:42:53.339Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "1a35d45b-b82b-4487-9cd1-bad6de65b996",
+            "name": "Comentarios",
+            "containerId": "",
+            "created": "2024-03-03T07:43:03.226Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8c39e27e-1b15-417b-994e-095479a76ac7",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "df55c214-ee82-46bb-83f1-9f24662f677c",
+            "name": "register",
+            "url": "http://localhost:3000/gestorOpiniones/v1/usuario/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T07:43:43.521Z",
+            "modified": "2024-03-03T07:59:27.087Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"nombre\" :\"Braulio\",\n  \"correo\" :\"braulin@gmail.com\",\n  \"password\": \"123456\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b81dab4-2670-4848-a4a1-a61e0736927b",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "df55c214-ee82-46bb-83f1-9f24662f677c",
+            "name": "login",
+            "url": "http://localhost:3000/gestorOpiniones/v1/usuario/login",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-03T07:44:47.473Z",
+            "modified": "2024-03-03T07:59:40.833Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\": \"braulin@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "053cb026-0a13-4cf2-9bec-70bc7e891f05",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "df55c214-ee82-46bb-83f1-9f24662f677c",
+            "name": "usuariosGet",
+            "url": "http://localhost:3000/gestorOpiniones/v1/usuario/get",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-03T07:48:34.034Z",
+            "modified": "2024-03-03T07:48:42.148Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7ff6a41e-fa59-4831-8d5e-6a7803c218cc",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "848b00ab-aeac-4534-8353-4bd232918302",
+            "name": "publicacionPost",
+            "url": "http://localhost:3000/gestorOpiniones/v1/publicacion/post",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-03T07:49:04.138Z",
+            "modified": "2024-03-03T07:50:24.654Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\" : \"El Mejor carro\",\n  \"categoria\": \"Carros\",\n  \"descripcion\": \"El mejor carro es el nissan skyline\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8599a917-363c-4928-ae5d-e220088ac872",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "848b00ab-aeac-4534-8353-4bd232918302",
+            "name": "publicacionGet",
+            "url": "http://localhost:3000/gestorOpiniones/v1/publicacion/get",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-03T07:50:46.264Z",
+            "modified": "2024-03-03T07:52:45.722Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "890d9ea3-ec88-44f0-bc30-4e60451e134c",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "848b00ab-aeac-4534-8353-4bd232918302",
+            "name": "publicacionPut",
+            "url": "http://localhost:3000/gestorOpiniones/v1/publicacion/put",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-03T07:50:54.544Z",
+            "modified": "2024-03-03T08:00:02.087Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"65e42c563cd1c6805bc43785\",\n  \"titulo\": \"El mejor carriño\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ef7c2bd8-0697-4b8c-b469-baeaeaa756db",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "848b00ab-aeac-4534-8353-4bd232918302",
+            "name": "publicacionDelete",
+            "url": "http://localhost:3000/gestorOpiniones/v1/publicacion/delete",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-03T07:53:24.217Z",
+            "modified": "2024-03-03T08:00:06.838Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"65e42c563cd1c6805bc43785\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dd12de6d-a159-4ceb-bd1b-9cfecdec3238",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "1a35d45b-b82b-4487-9cd1-bad6de65b996",
+            "name": "comentarioPost",
+            "url": "http://localhost:3000/gestorOpiniones/v1/comentario/post",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-03T07:54:17.513Z",
+            "modified": "2024-03-03T07:55:49.704Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idPublicacion\": \"65e42c563cd1c6805bc43785\",\n  \"Comentario\": \"Es mas joya el GTR\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ec2e2db8-a252-4c52-b3ed-a680b725b61b",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "1a35d45b-b82b-4487-9cd1-bad6de65b996",
+            "name": "comentarioGet",
+            "url": "http://localhost:3000/gestorOpiniones/v1/comentario/get",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-03T07:56:13.617Z",
+            "modified": "2024-03-03T07:56:20.785Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9d202e3c-4de1-413b-a379-8df8011de8c9",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "1a35d45b-b82b-4487-9cd1-bad6de65b996",
+            "name": "comentarioPut",
+            "url": "http://localhost:3000/gestorOpiniones/v1/comentario/put",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-03T07:56:36.097Z",
+            "modified": "2024-03-03T07:57:32.416Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"65e42d053cd1c6805bc43793\",\n  \"Comentario\": \"No creo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ed2d440-48e7-47b3-8786-3abecbe33c44",
+            "colId": "064c26ce-38f9-4af0-b3b8-2cf1356ab74e",
+            "containerId": "1a35d45b-b82b-4487-9cd1-bad6de65b996",
+            "name": "comentarioDelete",
+            "url": "http://localhost:3000/gestorOpiniones/v1/comentario/delete",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-03T07:57:56.896Z",
+            "modified": "2024-03-03T08:00:19.415Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"65e42d053cd1c6805bc43793\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

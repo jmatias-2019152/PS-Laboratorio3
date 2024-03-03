@@ -3,13 +3,23 @@ import cors from 'cors'
 import helmet from 'helmet';
 import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
+<<<<<<< HEAD
 import usuarioRoutes from '../src/usuario/usuario.routes.js'
+=======
+import usuarioRoutes from '../src/usuario/usuario.routes.js';
+import publicacionRoutes from '../src/publicacion/publicacion.routes.js';
+import { runInThisContext } from 'vm';
+>>>>>>> ft/publicacion
 
 class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT;
         this.usuarioPath = '/gestorOpiniones/v1/usuario';
+<<<<<<< HEAD
+=======
+        this.publicacionPath = '/gestorOpiniones/v1/publicacion'
+>>>>>>> ft/publicacion
         this.conectarDB(); 
         this.middlewares();
         this.routes();
@@ -32,6 +42,10 @@ class Server {
    
     routes() {
         this.app.use(this.usuarioPath, usuarioRoutes);
+<<<<<<< HEAD
+=======
+        this.app.use(this.publicacionPath, publicacionRoutes);
+>>>>>>> ft/publicacion
     };
 
     listen() {
